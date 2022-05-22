@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 text from rep1
 
 another text
+=======
+text from rep2
+
+
+>>>>>>> 9b204a82e08372765a54e2d9a74cd131dce45cc4
