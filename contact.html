@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body background="img/back.png">
+
+    
+    <!-- MENU -->
+    <article>
+         <div class="container">
+              <div class="nav">
+                   <nav>
+                        <ul>
+                             <li><a href="index.html" class="smoothScroll">Home</a></li>
+                             <li><a href="about_me.html">About</a></li>
+                             <li><a href="hobbies.html">Hobbyes</a></li>
+                             <li><a href="learn.html">Learn</a></li>
+                             <li><a href="albom.html">Albom</a></li>
+                             <li><a href="test.html">Test</a></li>
+                             <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                   </nav>
+              </div>
+              
+         </div>
+    </article>
+
+
+
+
+
+
+
+
+
+
+    <div style="margin-left: 570px; margin-top: 150px;" >
+		<form action="MAILTO:emirmedzitov@gmail.com" method="post" name="MyForm" id="MyForm">
+			<div style="text-align:center; margin-top: 20px;"><label>Form</label></div>
+			<div style="margin-left: 50px">
+			    <label for="name">Name:</label>
+			    <input type="text" id="name" name="user_name" required>
+			</div>
+			<div style="margin-left: 50px">
+			    <label for="gen">Gender:</label>
+			    <input style="width: 15px; text-align: left;" type="radio" id="gen1" name="user_gen" value="m" required>
+			    <label style="width: 0px; text-align: left; margin-right: 30px;" for="gen1">M</label>
+			    <input style="width: 15px; text-align: left;" type="radio" id="gen2" name="user_gen" value="w" required>
+			    <label style="width: 0px; text-align: left;" for="gen2">F</label>
+			</div>
+			<div style="margin-left: 50px">
+			    <label for="age">Age:</label>
+			    <select style="border: 1px solid #000;" required>
+				  <option></option>
+				  <option> 1-8 </option>
+				  <option> 9-14 </option>
+				  <option> 15-18 </option>
+				  <option> 19-21 </option>
+				  <option> 22-26 </option>
+				  <option> 27-35 </option>
+				  <option> 36-50 </option>
+				  <option> 50+ </option>
+			    </select>
+			</div>
+			<div style="margin-left: 50px">
+			    <label for="mail">E-mail:</label>
+			    <input type="email" id="mail" name="user_email" required>
+			</div>
+			<div style="margin-left: 50px">
+			    <label for="mail">Phone:</label>
+			    <input type="text" id="phone" name="user_phone" required>
+			</div>
+			<div style="margin-left: 50px">
+			    <input type="submit" value="Send" id="send">
+				<input type="reset" value="Clear">
+
+			</div>
+		</form>
+	</div>
+
+
+	<script>
+
+		var Form = document.getElementById("MyForm")
+		Form.noValidate = true;
+		Form.addEventListener("submit", validateForm)
+
+
+		
+
+		function validateForm(e) {
+
+			const form = e.target;
+
+			if (!form.checkValidity()) {
+
+  
+  			e.preventDefault();
+  			e.stopImmediatePropagation();
+
+			}
+
+		};	
+
+
+
+		var Name = document.getElementById("name");
+		var Phone = document.getElementById("phone");
+		var button = document.getElementById("send");
+			button.onclick = function(){
+				window.alert((String(Name).split(" ").length))
+
+				//if(((Name.split(" ").length-1)!=1)){
+				//	window.alert("Пример вывода сообщения");
+				//}
+				//if(!(isNaN(Phone))){
+				//	window.alert("Пример вывода сообщения");
+				//}
+				
+			
+		}
+	
+	
+	</script>
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>

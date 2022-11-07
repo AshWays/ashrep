@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body background="img/back.png">
+
+    <script>
+		document.writeln ("Первая строка");
+		document.writeln ("Вторая строка");
+		</script>
+
+ <script>
+	window.alert("Пример вывода сообщения");
+   </script>
+<script type="text/javascript">
+
+
+    var arrayId = new Array("img1","img2","img3","img4","img5","img6","img7","img8","img9","img10","img11","img12","img13",
+	"img14","img15")
+
+    arrayImg = new Array("img/man1.jpg","img/man2.jpg","img/man3.jpg","img/man4.jpg","img/man5.jpg","img/man6.jpg","img/man7.jpg",
+    "img/man8.jpg","img/man9.jpg","img/man10.jpg","img/man11.jpg","img/man12.jpg","img/man13.jpg","img/man14.jpg","img/man15.jpg",)
+
+   // document.writeln ('<img src="img/man1.jpg"/>');
+  
+
+var table = document.createElement('table');
+for (var i = 0; i < 15; i++) {
+   var tr = document.createElement('tr');   
+   var td1 = document.createElement('td');
+   var td2 = document.createElement('td');
+   var td3 = document.createElement('td');
+
+   var text1 = document.createTextNode(arrayId[0]);
+   var text2 = document.createTextNode(arrayId[1]);
+   var text3 = document.createTextNode(arrayId[2]);
+
+   td1.appendChild(text1);
+   td2.appendChild(text2);
+   td3.appendChild(text3);
+
+   tr.appendChild(td1);
+   tr.appendChild(td2);
+   tr.appendChild(td3);
+   table.appendChild(tr);
+}
+
+</script>-
+
+<img id="theImage1"/>
+<img id="theImage2"/>
+<img id="theImage3"/>
+<img id="theImage4"/>
+<img id="theImage5"/>
+<script>
+ document.getElementById("theImage1").src = "img/man1.jpg";
+ document.getElementById("theImage2").src = "img/man2.jpg";
+ document.getElementById("theImage3").src = "img/man3.jpg";
+ document.getElementById("theImage4").src = "img/man4.jpg";
+ document.getElementById("theImage5").src = "img/man5.jpg";
+</script>
+
+
+</body>
+</html>
